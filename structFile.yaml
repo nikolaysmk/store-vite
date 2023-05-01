@@ -1,0 +1,53 @@
+src/
+|--components/
+|  |--Header/
+|  |  |--Header.tsx
+|  |  |--Header.styles.ts
+|  |--Footer/
+|  |  |--Footer.tsx
+|  |  |--Footer.styles.ts
+|--features/
+|  |--Auth/
+|  |  |--components/
+|  |  |  |--LoginForm/
+|  |  |  |  |--LoginForm.tsx
+|  |  |  |  |--LoginForm.styles.ts
+|  |  |  |--RegisterForm/
+|  |  |  |  |--RegisterForm.tsx
+|  |  |  |  |--RegisterForm.styles.ts
+|  |  |--pages/
+|  |  |  |--LoginPage/
+|  |  |  |  |--LoginPage.tsx
+|  |  |  |  |--LoginPage.styles.ts
+|  |  |  |--RegisterPage/
+|  |  |  |  |--RegisterPage.tsx
+|  |  |  |  |--RegisterPage.styles.ts
+|  |  |--AuthSlice.ts
+|  |--Cart/
+|  |  |--components/
+|  |  |  |--CartItemList/
+|  |  |  |  |--CartItemList.tsx
+|  |  |  |  |--CartItemList.styles.ts
+|  |  |  |--CartSummary/
+|  |  |  |  |--CartSummary.tsx
+|  |  |  |  |--CartSummary.styles.ts
+|  |  |--pages/
+|  |  |  |--CartPage/
+|  |  |  |  |--CartPage.tsx
+|  |  |  |  |--CartPage.styles.ts
+|  |  |--CartSlice.ts
+|--services/
+|  |--api/
+|  |  |--auth.ts
+|  |  |--cart.ts
+|  |  |--products.ts
+|  |--helpers/
+|  |  |--auth.ts
+|  |  |--cart.ts
+|  |  |--products.ts
+|--utils/
+|  |--helpers/
+|  |  |--common.ts
+|--App.tsx
+|--index.tsx
+|--Routes.tsx
