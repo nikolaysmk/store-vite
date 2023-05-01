@@ -1,0 +1,39 @@
+src/
+|--components/
+|  |--Header/
+|  |  |--Header.tsx
+|  |  |--Header.styles.ts
+|  |--Footer/
+|  |  |--Footer.tsx
+|  |  |--Footer.styles.ts
+|--features/
+|  |--Dashboard/
+|  |  |--components/
+|  |  |  |--DashboardCard/
+|  |  |  |  |--DashboardCard.tsx
+|  |  |  |  |--DashboardCard.styles.ts
+|  |  |  |--DashboardChart/
+|  |  |  |  |--DashboardChart.tsx
+|  |  |  |  |--DashboardChart.styles.ts
+|  |  |  |--DashboardTable/
+|  |  |  |  |--DashboardTable.tsx
+|  |  |  |  |--DashboardTable.styles.ts
+|  |  |--pages/
+|  |  |  |--DashboardPage/
+|  |  |  |  |--DashboardPage.tsx
+|  |  |  |  |--DashboardPage.styles.ts
+|  |  |--DashboardSlice.ts
+|--services/
+|  |--api/
+|  |  |--dashboard.ts
+|  |  |--user.ts
+|  |--helpers/
+|  |  |--dashboard.ts
+|  |  |--user.ts
+|--utils/
+|  |--helpers/
+|  |  |--common.ts
+|--App.tsx
+|--index.tsx
+|--Routes.tsx
+# Здесь мы имеем компоненты Header и Footer в папке components. Для нашего основного функционала dashboard мы создали папку features, в которой есть Dashboard, содержащий компоненты и страницы для этой функциональности. Компоненты содержатся в папке components, а страницы в папке pages. Для управления состоянием используется Redux Toolkit с созданием DashboardSlice. Сервисы api и helpers помогают нам взаимодействовать с сервером и осуществлять общие функции в приложении. Мы также имеем общие утилиты в папке utils. В итоге, файлы App.tsx, index.tsx и Routes.tsx помогают нам настроить и запустить наше приложение.
