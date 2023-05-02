@@ -1,10 +1,14 @@
+import { Header } from './components/Header/Header';
+import { Footer } from './components/Footer/Footer';
+
 import './App.css';
-import Routes from './Routes';
 
 function App() {
   return (
     <>
-      <Routes />
+      <Header />
+      <h1>App tsx</h1>
+      <Footer />
     </>
   );
 }
