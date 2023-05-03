@@ -1,5 +1,4 @@
-import { createSlice } from '@reduxjs/toolkit';
-import type { PayloadAction } from '@reduxjs/toolkit';
+import { createSlice, PayloadAction, Dispatch } from '@reduxjs/toolkit';
 
 export interface CounterState {
   value: number;
@@ -25,7 +24,7 @@ export const counterSlice = createSlice({
   },
 });
 
-export const incrementAsync = (amount: number) => (dispatch: any) => {
+export const incrementAsync = (amount: number) => (dispatch: Dispatch) => {
   setTimeout(() => {
     dispatch(incrementByAmount(amount));
   }, 1000);
