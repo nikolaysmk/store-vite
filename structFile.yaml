@@ -36,7 +36,7 @@ src/
 |  |  |  |  |--CartPage.tsx
 |  |  |  |  |--CartPage.styles.ts
 |  |  |--CartSlice.ts
-|--services/
+|--services
 |  |--api/
 |  |  |--auth.ts
 |  |  |--cart.ts
