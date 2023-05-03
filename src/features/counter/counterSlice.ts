@@ -1,4 +1,9 @@
-import { createSlice, PayloadAction, Dispatch } from '@reduxjs/toolkit';
+import {
+  createSlice,
+  PayloadAction,
+  Dispatch,
+  AnyAction,
+} from '@reduxjs/toolkit';
 
 export interface CounterState {
   value: number;
@@ -12,8 +17,8 @@ export const counterSlice = createSlice({
   name: 'counter',
   initialState,
   reducers: {
-    increment: (state) => {
-      state.value += 1;
+    increment: (state, action: PayloadAction<number>) => {
+      state.value += action.payload;
     },
     decrement: (state) => {
       state.value -= 1;
@@ -24,11 +29,19 @@ export const counterSlice = createSlice({
   },
 });
 
-export const incrementAsync = (amount: number) => (dispatch: Dispatch) => {
-  setTimeout(() => {
-    dispatch(incrementByAmount(amount));
-  }, 1000);
-};
+export const incrementAsync =
+  (amount: number) => (dispatch: Dispatch<AnyAction>) => {
+    setTimeout(() => {
+      try {
+        dispatch(incrementByAmount(amount));
+      } catch (err) {
+        console.error(
+          'An error occurred while dispatching incrementByAmount:',
+          err,
+        );
+      }
+    }, 5000);
+  };
 
 export const { increment, decrement, incrementByAmount } = counterSlice.actions;
 
